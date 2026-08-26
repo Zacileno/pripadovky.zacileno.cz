@@ -24,7 +24,7 @@ export default function Header() {
 
           {/* CTA button */}
           <Link
-            href="https://www.zacileno.cz/#kontakty"
+            href="https://www.zacileno.cz/?odesli"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-black text-sm font-bold px-6 py-2.5 rounded-full hover:bg-zac-yellow transition-colors whitespace-nowrap"
