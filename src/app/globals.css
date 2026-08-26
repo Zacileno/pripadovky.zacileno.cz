@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Zacíleno brand colors */
+  --color-zac-red: #ED1E00;
+  --color-zac-yellow: #FFB000;
+  --color-zac-dark-red: #770B00;
+  --color-zac-black: #000000;
+  --color-zac-white: #FFFFFF;
+
+  /* Font family */
+  --font-silka: var(--font-silka), sans-serif;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-silka), sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+/* Headings use lowercase from content, not text-transform */
