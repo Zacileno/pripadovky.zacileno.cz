@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Header from "@/components/Header";
-import { getSiteUrl } from "@/lib/site";
+import { GTM_ID, getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const silka = localFont({
@@ -50,7 +51,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs" className={`${silka.variable} h-full antialiased`}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className="min-h-full flex flex-col font-silka font-medium text-black">
+        {/* Záloha pro návštěvníky s vypnutým JavaScriptem */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Header />
         {children}
       </body>

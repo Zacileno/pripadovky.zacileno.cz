@@ -11,3 +11,6 @@ export function getSiteUrl(): string {
     ? PRODUCTION_URL
     : "http://localhost:3000";
 }
+
+/** Kontejner Google Tag Manageru (není tajný, v prohlížeči je vidět vždy). */
+export const GTM_ID = "GTM-WHKLKFCV";
