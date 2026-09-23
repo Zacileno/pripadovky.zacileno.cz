@@ -13,4 +13,4 @@ export function getSiteUrl(): string {
 }
 
 /** Kontejner Google Tag Manageru (není tajný, v prohlížeči je vidět vždy). */
-export const GTM_ID = "GTM-WHKLKFCV";
+export const GTM_ID = "GTM-55M944R";
